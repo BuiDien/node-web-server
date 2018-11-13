@@ -41,6 +41,12 @@ app.get('/',(require,response)=>{
         welcomeMessage: 'Welcome to my website',
     });
 });
+app.get('/project', (req,res)=>{
+    res.render('project.hbs',{
+        pageTitle: 'Project',
+        Details: 'This is my project about static website'
+    });
+});
 app.get('/about',(req,res)=>{
     res.render('about.hbs',{
         pageTitle: 'About Page',
